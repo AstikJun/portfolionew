@@ -1,0 +1,82 @@
+body{
+
+	background-color: #373b3f;
+}
+
+#myContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: black;
+}
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: purple;
+}
+.social{
+	font-weight: bold;
+}
+.random{
+	background: url(https://source.unsplash.com/random);
+}
+a {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before{
+  width: 200px;
+}
+
+#containerClick{
+	height: 200px;
+	width: 200px;
+	border: 10 px solid #926981;
+	background-color: #888169;
+}
+#number{
+	height: 25px;
+	widows: 250px;
+	border: 1px solid black;
+	background-color: white;
+}
+#increment{
+	height: 25px;
+	width: 100px;
+}
+#decrement{
+	height: 25px;
+	width: 100px;
+	margin-top: 25 px;
+	
+}
